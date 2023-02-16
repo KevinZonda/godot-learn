@@ -1,0 +1,16 @@
+.DS_Store
+
+.vscode/
+
+**/.vscode/
+**/.idea/
+**/.vs/
+**/.mono/
+
+**/.godot/
+**/.import/
+**/export.cfg
+**/export_presets.cfg
+**/*.translation
+**/data_*/
+**/mono_crash.*.json
