@@ -6,8 +6,7 @@ func _ready():
 
 func _on_Hero_hit():
 	$Sprite.hide()
-	$CollisionShape2D.disabled = true
-	emit_signal("hit")
+	$CollisionShape2D.set_deferred("disabled", true)
 
 
 func _on_BtnReset_pressed():
