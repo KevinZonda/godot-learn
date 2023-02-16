@@ -57,6 +57,4 @@ func _on_visible():
 
 
 func _on_hero_body_entered(body):
-	print("hit!")
 	emit_signal("hit")
-	pass # Replace with function body.
