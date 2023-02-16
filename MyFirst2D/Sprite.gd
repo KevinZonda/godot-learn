@@ -1,4 +1,4 @@
-extends Sprite2D
+extends Sprite
 
 var speed = 400
 var angular_speed = PI
@@ -7,7 +7,7 @@ func _init():
 	print("Hello World!")
 
 func _ready():
-	get_tree().get_root().connect("size_changed", Callable(self, "_resize"))
+	get_tree().get_root().connect("size_changed", self, "_resize")
 	screen_size = get_viewport_rect().size
 	position = screen_size * 0.5
 
