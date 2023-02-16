@@ -44,8 +44,8 @@ texture = ExtResource( 3 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBallObj"]
 shape = SubResource( 2 )
 
-[connection signal="pressed" from="BtnReset" to="Hero/Sprite" method="_on_reset"]
+[connection signal="pressed" from="BtnReset" to="Hero" method="_on_reset"]
 [connection signal="pressed" from="BtnReset" to="HitBallObj" method="_on_BtnReset_pressed"]
-[connection signal="pressed" from="BtnVisible" to="Hero/Sprite" method="_on_visible"]
+[connection signal="pressed" from="BtnVisible" to="Hero" method="_on_visible"]
 [connection signal="body_entered" from="Hero" to="Hero" method="_on_hero_body_entered"]
 [connection signal="hit" from="Hero" to="HitBallObj" method="_on_Hero_hit"]
