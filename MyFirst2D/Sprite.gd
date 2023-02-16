@@ -42,8 +42,8 @@ func adjust_pos():
 	position.x = x[1]
 	var y = adjust(position.y, 0, screen_size.y)
 	position.y = y[1]
-	if x[0] or y[0]:
-		rotation += PI
+	#if x[0] or y[0]:
+	#	rotation += PI
 
 func _on_reset():
 	position = screen_size * 0.5
