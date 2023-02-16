@@ -1,4 +1,6 @@
-extends Sprite
+extends Area2D
+
+signal hit
 
 var speed = 400
 var angular_speed = PI
@@ -52,3 +54,9 @@ func _on_reset():
 
 func _on_visible():
 	visible = not visible
+
+
+func _on_hero_body_entered(body):
+	print("hit!")
+	emit_signal("hit")
+	pass # Replace with function body.
