@@ -3,12 +3,9 @@ extends StaticBody2D
 signal scoreIncrease
 
 func randomPlace():
-	
 	position.x = rng.randf_range(1.0, screen_size.x)
 	position.y = rng.randf_range(1.0, screen_size.y)
-	print($CollisionShape2D.position)
-	
-	print(position)
+	print(screen_size, position)
 
 func _resize():
 	screen_size = get_viewport_rect().size
